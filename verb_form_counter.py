@@ -13,7 +13,7 @@ CLTK_DIR = "/home/connor/cltk_data/greek/text/tlg/plaintext"
 OUT_DIR = "/home/connor/ling/LING 202/Project/Output"
 COMPLETED_FILE = "/home/connor/ling/LING 202/Project/Output/completed.txt"
 
-class VerbFormCounter():
+class FormCounter():
 
 	tagger = None
 	lemmatizer = None
@@ -81,6 +81,6 @@ class VerbFormCounter():
 		pool.close()
 		
 if __name__ == "__main__":
-	counter = VerbFormCounter()
+	counter = FormCounter()
 	counter.get_total_counts()
 
